@@ -1,2 +1,3 @@
-# pixel-creator
-create new pixel character
+# Pixel creator
+
+Generate customimzed pixel art.
