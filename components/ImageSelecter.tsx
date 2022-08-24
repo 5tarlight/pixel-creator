@@ -3,22 +3,23 @@ import CategoryItem from "./CategoryItem";
 
 interface Props {}
 
+export const categories = {
+  skin: "피부",
+  hair: "머리",
+  eye: "눈",
+  nose: "코",
+  mouth: "입",
+  clothes: "옷",
+};
+
 const ImageSelecter: NextPage<Props> = () => {
   return (
     <>
       <div className="selecter">
         <div className="category">
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
-          <CategoryItem text="test" />
+          {Object.values(categories).map((k, i) => (
+            <CategoryItem text={k} key={i} />
+          ))}
         </div>
       </div>
       <style jsx>{`
