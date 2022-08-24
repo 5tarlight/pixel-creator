@@ -10,6 +10,7 @@ export const categories = {
   nose: "코",
   mouth: "입",
   clothes: "옷",
+  makeup: "화장",
 };
 
 const ImageSelecter: NextPage<Props> = () => {
