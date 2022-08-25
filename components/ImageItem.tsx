@@ -4,12 +4,20 @@ import Image from "next/image";
 interface Props {
   src: string;
   name: string;
+  onClick(): void;
 }
 
-const ImageItem: NextPage<Props> = ({ src, name }) => {
+const ImageItem: NextPage<Props> = ({ src, name, onClick }) => {
   return (
     <>
-      <div className="container">
+      <div
+        className="container"
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          onClick();
+        }}
+      >
         <Image className="img" src={src} alt={name} width={128} height={128} />
         <nav>{name}</nav>
       </div>
@@ -19,6 +27,11 @@ const ImageItem: NextPage<Props> = ({ src, name }) => {
           display: flex;
           width: 100%;
           height: 128px;
+        }
+
+        .container:hover {
+          font-weight: 300;
+          cursor: pointer;
         }
 
         .img {

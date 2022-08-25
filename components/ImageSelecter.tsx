@@ -4,9 +4,11 @@ import CategoryItem from "./CategoryItem";
 import ImageItem from "./ImageItem";
 import { categories, items } from "./item";
 
-interface Props {}
+interface Props {
+  setItem(cat: string, item: string): void;
+}
 
-const ImageSelecter: NextPage<Props> = () => {
+const ImageSelecter: NextPage<Props> = ({ setItem }) => {
   const [category, setCategory] = useState(Object.keys(categories)[0]);
 
   return (
@@ -26,7 +28,14 @@ const ImageSelecter: NextPage<Props> = () => {
         </div>
         <div className="img">
           {Object.keys(items[category]).map((k, i) => (
-            <ImageItem src={items[category][k]} name={k} key={i} />
+            <ImageItem
+              src={items[category][k]}
+              name={k}
+              key={i}
+              onClick={() => {
+                setItem(category, items[category][k]);
+              }}
+            />
           ))}
         </div>
       </div>
