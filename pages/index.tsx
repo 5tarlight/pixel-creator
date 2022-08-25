@@ -1,10 +1,22 @@
 import type { NextPage } from "next";
+import { StaticImageData } from "next/image";
 import { useState } from "react";
 import ImageSelecter from "../components/ImageSelecter";
+import ImageViewer from "../components/ImageViewer";
 import { items } from "../components/item";
 
+export interface ImageData {
+  clothes: StaticImageData;
+  eye: StaticImageData;
+  skin: StaticImageData;
+  nose: StaticImageData;
+  mouth: StaticImageData;
+  makeup: StaticImageData;
+  hair: StaticImageData;
+}
+
 const Home: NextPage = () => {
-  const [obj, setObj] = useState({
+  const [obj, setObj] = useState<ImageData>({
     clothes: items.clothes.uniformMan,
     eye: items.eye.lineEye,
     skin: items.skin.pinkFace,
@@ -21,12 +33,11 @@ const Home: NextPage = () => {
     });
   };
 
-  console.log(obj);
-
   return (
     <>
       <div className="container">
         <ImageSelecter setItem={setItem} />
+        <ImageViewer data={obj} />
       </div>
 
       <style jsx>{`
