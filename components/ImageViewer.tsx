@@ -1,6 +1,6 @@
 import mergeImages from "merge-images";
 import { NextPage } from "next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ImageData } from "../pages";
 import { items } from "./item";
 
@@ -12,18 +12,20 @@ interface Props {
 const ImageViewer: NextPage<Props> = ({ data, resetImg }) => {
   const [img, setImg] = useState<string>("");
 
-  mergeImages([
-    data.skin,
-    data.mouth,
-    data.nose,
-    data.eye,
-    data.makeup,
-    data.hair,
-    data.clothes,
-    items.line,
-  ]).then((b64) => {
-    setImg(b64);
-  });
+  useEffect(() => {
+    mergeImages([
+      data.skin,
+      data.mouth,
+      data.nose,
+      data.eye,
+      data.makeup,
+      data.hair,
+      data.clothes,
+      items.line,
+    ]).then((b64) => {
+      setImg(b64);
+    });
+  }, [data]);
 
   return (
     <>
