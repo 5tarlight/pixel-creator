@@ -17,6 +17,9 @@ const ImageSelecter: NextPage<Props> = () => {
               text={categories[k]}
               key={i}
               selected={k === category}
+              onClick={() => {
+                setCategory(k);
+              }}
             />
           ))}
         </div>
