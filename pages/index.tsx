@@ -16,7 +16,7 @@ export interface ImageData {
 }
 
 const Home: NextPage = () => {
-  const [obj, setObj] = useState<ImageData>({
+  const initialState: ImageData = {
     clothes: items.clothes.uniformMan,
     eye: items.eye.lineEye,
     skin: items.skin.pinkFace,
@@ -24,7 +24,9 @@ const Home: NextPage = () => {
     mouth: items.mouth.lineMouth,
     makeup: items.makeup.chickPink,
     hair: items.hair.blackHair,
-  });
+  };
+
+  const [obj, setObj] = useState<ImageData>(initialState);
 
   const setItem = (cat: string, item: string) => {
     setObj({
@@ -37,7 +39,7 @@ const Home: NextPage = () => {
     <>
       <div className="container">
         <ImageSelecter setItem={setItem} />
-        <ImageViewer data={obj} />
+        <ImageViewer data={obj} resetImg={() => setObj(initialState)} />
       </div>
 
       <style jsx>{`

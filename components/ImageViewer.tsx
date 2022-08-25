@@ -6,9 +6,10 @@ import { items } from "./item";
 
 interface Props {
   data: ImageData;
+  resetImg(): void;
 }
 
-const ImageViewer: NextPage<Props> = ({ data }) => {
+const ImageViewer: NextPage<Props> = ({ data, resetImg }) => {
   const [img, setImg] = useState<string>("");
 
   mergeImages([
@@ -29,8 +30,51 @@ const ImageViewer: NextPage<Props> = ({ data }) => {
       <div className="container">
         <img src={img} width={786} height={786} />
         <div className="btn-container">
-          <button className="print">출력</button>
-          <button className="reset">초기화</button>
+          <button
+            className="print"
+            onClick={(e) => {
+              e.stopPropagation();
+              e.preventDefault();
+              // window.open("google.com", "_blank")?.focus();
+
+              const src =
+                "<html><head><scri" +
+                "pt>function step1(){\n" +
+                "setTimeout('step2()', 10);}\n" +
+                "function step2(){window.print();window.close()}\n" +
+                "</scri" +
+                "pt>" +
+                `
+                <style>
+                  img {
+                    width: 512px;
+                    height: 512px;
+                  }
+                </style>
+                ` +
+                "</head><body onload='step1()'>\n" +
+                "<img src='" +
+                img +
+                "' /></body></html>";
+              const Pagelink = "about:blank";
+              const pwa = window.open(Pagelink, "_new");
+              pwa?.document.open();
+              pwa?.document.write(src);
+              pwa?.document.close();
+            }}
+          >
+            출력
+          </button>
+          <button
+            className="reset"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              resetImg();
+            }}
+          >
+            초기화
+          </button>
         </div>
       </div>
 
@@ -58,6 +102,21 @@ const ImageViewer: NextPage<Props> = ({ data }) => {
           width: 250px;
           height: 64px;
           line-height: 64px;
+          font-size: 1.5rem;
+          border: none;
+          cursor: pointer;
+        }
+
+        .print {
+          background-color: #83f783;
+          border-top-left-radius: 7px;
+          border-bottom-left-radius: 7px;
+        }
+
+        .reset {
+          background-color: #ff7171;
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
         }
       `}</style>
     </>
