@@ -2,12 +2,15 @@ import { NextPage } from "next";
 
 interface Props {
   text: string;
+  selected?: boolean;
 }
 
-const CategoryItem: NextPage<Props> = ({ text }) => {
+const CategoryItem: NextPage<Props> = ({ text, selected = false }) => {
+  const name = selected ? "item selected" : "item";
+
   return (
     <>
-      <div className="item">{text}</div>
+      <div className={name}>{text}</div>
 
       <style jsx>{`
         .item {
@@ -19,7 +22,8 @@ const CategoryItem: NextPage<Props> = ({ text }) => {
           color: grey;
         }
 
-        .item:hover {
+        .item:hover,
+        .selected {
           cursor: pointer;
           font-weight: bold;
           color: black;
