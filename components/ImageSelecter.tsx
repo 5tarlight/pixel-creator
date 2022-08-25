@@ -1,7 +1,8 @@
 import { NextPage } from "next";
 import { useState } from "react";
 import CategoryItem from "./CategoryItem";
-import { categories } from "./item";
+import ImageItem from "./ImageItem";
+import { categories, items } from "./item";
 
 interface Props {}
 
@@ -23,6 +24,11 @@ const ImageSelecter: NextPage<Props> = () => {
             />
           ))}
         </div>
+        <div className="img">
+          {Object.keys(items[category]).map((k, i) => (
+            <ImageItem src={items[category][k]} name={k} key={i} />
+          ))}
+        </div>
       </div>
       <style jsx>{`
         .selecter {
@@ -37,6 +43,11 @@ const ImageSelecter: NextPage<Props> = () => {
           border-bottom: 1px solid black;
           display: flex;
           flex-wrap: wrap;
+        }
+
+        .img {
+          height: 30%;
+          width: 100%;
         }
       `}</style>
     </>
