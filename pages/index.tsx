@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import { StaticImageData } from "next/image";
 import { useState } from "react";
 import ImageSelecter from "../components/ImageSelecter";
@@ -37,6 +38,9 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>AI 코디스트 김규산</title>
+      </Head>
       <div className="container">
         <ImageSelecter setItem={setItem} />
         <ImageViewer data={obj} resetImg={() => setObj(initialState)} />
