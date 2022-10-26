@@ -19,9 +19,9 @@ const ImageViewer: NextPage<Props> = ({ data, resetImg }) => {
       data.nose,
       data.eye,
       data.makeup,
-      data.hair,
-      data.clothes,
       items.line,
+      data.clothes,
+      data.hair,
     ]).then((b64) => {
       setImg(b64);
     });
