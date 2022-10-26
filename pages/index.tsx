@@ -20,10 +20,10 @@ const Home: NextPage = () => {
   const initialState: ImageData = {
     clothes: items.clothes.uniformMan,
     eye: items.eye.lineEye,
-    skin: items.skin.pinkFace,
+    skin: items.skin.brightFace,
     nose: items.nose.lineNose,
     mouth: items.mouth.lineMouth,
-    makeup: items.makeup.chickPink,
+    makeup: items.makeup.pinkCheek,
     hair: items.hair.blackHair,
   };
 
