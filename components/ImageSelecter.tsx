@@ -57,6 +57,8 @@ const ImageSelecter: NextPage<Props> = ({ setItem }) => {
         .img {
           height: 30%;
           width: 100%;
+          overflow: auto;
+          height: 100%;
         }
       `}</style>
     </>
