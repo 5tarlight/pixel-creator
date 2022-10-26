@@ -20,11 +20,14 @@ import purpleEye from "./img/eye/purple_eye.png";
 import smilingEye from "./img/eye/smiling_eye.png";
 import bwEye from "./img/eye/bwEye.png";
 import brownEye from "./img/eye/brown_eye.png";
+import smallEye from "./img/eye/small_eye.png";
 
 // import pinkFace from "./img/skin/pink-face.png";
 import brightFace from "./img/skin/bright_skin.png";
 import shiningSkin from "./img/skin/shining_skin.png";
 import skin from "./img/skin/skin.png";
+import skin2 from "./img/skin/skin2.png";
+import skin3 from "./img/skin/skin3.png";
 
 import blackHair from "./img/hair/black-hair.png";
 import yellowTail from "./img/hair/yello-hair.png";
@@ -38,6 +41,7 @@ import bananaHair from "./img/hair/bananaHair.png";
 import rainbowHair from "./img/hair/rainbow_hair.png";
 import devilHair from "./img/hair/devil_hair.png";
 import webHair from "./img/hair/web_hair.png";
+import pumpkinHair from "./img/hair/pumpkin_head.png";
 
 import pinkCheek from "./img/makeup/cheek-pink.png";
 import fullMakeup from "./img/makeup/full_makeup.png";
@@ -46,6 +50,8 @@ import redScar from "./img/makeup/red_scar.png";
 import bearCap from "./img/makeup/bear_cap.png";
 import devilCap from "./img/makeup/devil_cap.png";
 import dotCheek from "./img/makeup/dot_cheek.png";
+import scar from "./img/makeup/scar.png";
+import scar2 from "./img/makeup/scar2.png";
 
 import lineMouth from "./img/mouth/line-mouth.png";
 import redStrokeMouth from "./img/mouth/red_stripe_mouth.png";
@@ -70,7 +76,7 @@ export const categories = {
 
 export const items = {
   line: line,
-  skin: { brightFace, shiningSkin, skin },
+  skin: { brightFace, shiningSkin, skin, skin2, skin3 },
   hair: {
     blackHair,
     yellowTail,
@@ -86,6 +92,7 @@ export const items = {
     webHair,
     bearCap,
     devilCap,
+    pumpkinHat: pumpkinHair,
   },
   eye: {
     lineEye,
@@ -97,6 +104,7 @@ export const items = {
     smilingEye,
     bwEye,
     brownEye,
+    smallEye,
   },
   nose: { lineNose, yellowSmallNose, dotNose, jNose },
   mouth: { lineMouth, redStrokeMouth, merong, smile, openMouth },
@@ -118,5 +126,7 @@ export const items = {
     lineCheek,
     bleedingEye: redScar,
     dotCheek,
+    scar,
+    scar2,
   },
 };
