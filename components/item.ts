@@ -3,6 +3,12 @@ import line from "./img/line.png";
 import uniformMan from "./img/clothes/uniform-man.png";
 import m2mGrey from "./img/clothes/m2m_grey.png";
 import orange from "./img/clothes/orange.png";
+import blueHy from "./img/clothes/blue_hy.png";
+import gymHy from "./img/clothes/gym_hy.png";
+import baseballHy from "./img/clothes/baseball_hy.png";
+import cozyUniform from "./img/clothes/cozy_uniform.png";
+import blackCoat from "./img/clothes/coat_black.png";
+import whiteCoat from "./img/clothes/coat_white.png";
 
 import lineEye from "./img/eye/line-eye.png";
 import chorongEye from "./img/eye/chorong_chrong.png";
@@ -83,6 +89,16 @@ export const items = {
   },
   nose: { lineNose, yellowSmallNose, dotNose },
   mouth: { lineMouth, redStrokeMouth, merong, smile },
-  clothes: { uniformMan, m2mGrey, orange },
+  clothes: {
+    uniformMan,
+    m2mGrey,
+    orange,
+    blueHy,
+    gymHy,
+    baseballHy,
+    cozyUniform,
+    blackCoat,
+    whiteCoat,
+  },
   makeup: { pinkCheek, fullMakeup, lineCheek, redScar, bearCap, devilCap },
 };
