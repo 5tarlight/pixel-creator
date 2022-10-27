@@ -18,7 +18,7 @@ export interface ImageData {
 
 const Home: NextPage = () => {
   const initialState: ImageData = {
-    clothes: items.clothes.uniformMan,
+    clothes: items.clothes.uniform,
     eye: items.eye.lineEye,
     skin: items.skin.brightFace,
     nose: items.nose.lineNose,

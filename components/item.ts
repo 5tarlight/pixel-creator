@@ -21,7 +21,14 @@ import smilingEye from "./img/eye/smiling_eye.png";
 import bwEye from "./img/eye/bwEye.png";
 import brownEye from "./img/eye/brown_eye.png";
 import smallEye from "./img/eye/small_eye.png";
-import chrong2 from "./img/eye/choront2.png";
+import chorong2 from "./img/eye/choront2.png";
+import brownLine from "./img/eye/brown_line.png";
+import chorong3 from "./img/eye/chorong3.png";
+import chorong4 from "./img/eye/chorong4.png";
+import glasses from "./img/eye/glasses.png";
+import stroke from "./img/eye/stroke.png";
+import chorong5 from "./img/eye/chorong5.png";
+import chorong6 from "./img/eye/chorong6.png";
 
 // import pinkFace from "./img/skin/pink-face.png";
 import brightFace from "./img/skin/bright_skin.png";
@@ -45,6 +52,12 @@ import devilHair from "./img/hair/devil_hair.png";
 import webHair from "./img/hair/web_hair.png";
 import pumpkinHair from "./img/hair/pumpkin_head.png";
 import hair from "./img/hair/hair.png";
+import blackLongHair from "./img/hair/black_long.png";
+import brownLongHair from "./img/hair/brown_long.png";
+import orangeLongHair from "./img/hair/orange_long.png";
+import redLongHair from "./img/hair/red_long.png";
+import purpleLongHair from "./img/hair/purple_long.png";
+import yellowLongHair from "./img/hair/yellow_long.png";
 
 import pinkCheek from "./img/makeup/cheek-pink.png";
 import fullMakeup from "./img/makeup/full_makeup.png";
@@ -58,6 +71,8 @@ import scar2 from "./img/makeup/scar2.png";
 import eyebrows from "./img/makeup/eyebrows.png";
 import cherry from "./img/makeup/cherry.png";
 import cheek from "./img/makeup/cheek.png";
+import redRibbon from "./img/makeup/red_ribbon.png";
+import triCheek from "./img/mouth/tri_cheek.png";
 
 import lineMouth from "./img/mouth/line-mouth.png";
 import redStrokeMouth from "./img/mouth/red_stripe_mouth.png";
@@ -65,12 +80,16 @@ import merong from "./img/mouth/tongue.png";
 import smile from "./img/mouth/smile.png";
 import openMouth from "./img/mouth/open_mouth.png";
 import triMouth from "./img/mouth/tri_mouth.png";
+import lip from "./img/mouth/lip.png";
+import redMouth from "./img/mouth/red_mouth.png";
 
 import lineNose from "./img/nose/line-nose.png";
 import yellowSmallNose from "./img/nose/small_yello_nose.png";
 import dotNose from "./img/nose/dot_nose.png";
 import jNose from "./img/nose/j_nose.png";
 import triNose from "./img/nose/tri_nose.png";
+import smallNose from "./img/nose/small_nose.png";
+import middleNose from "./img/nose/mid_nose.png";
 
 export const categories = {
   skin: "피부",
@@ -88,6 +107,12 @@ export const items = {
   hair: {
     blackHair,
     hair,
+    blackLongHair,
+    brownLongHair,
+    orangeLongHair,
+    purpleLongHair,
+    redLongHair,
+    yellowLongHair,
     yellowTail,
     blueTwin,
     pinkShucream,
@@ -106,6 +131,11 @@ export const items = {
   eye: {
     lineEye,
     chorongEye,
+    chorong2,
+    chorong3,
+    chorong4,
+    chorong5,
+    chorong6,
     blueEye,
     toughEye,
     injuredEye,
@@ -114,12 +144,30 @@ export const items = {
     bwEye,
     brownEye,
     smallEye,
-    chrong2,
+    brownLine,
+    glasses,
   },
-  nose: { lineNose, yellowSmallNose, dotNose, jNose, triNose },
-  mouth: { lineMouth, redStrokeMouth, merong, smile, openMouth, triMouth },
+  nose: {
+    lineNose,
+    yellowSmallNose,
+    dotNose,
+    jNose,
+    triNose,
+    smallNose,
+    middleNose,
+  },
+  mouth: {
+    lineMouth,
+    redStrokeMouth,
+    merong,
+    smile,
+    openMouth,
+    triMouth,
+    lip,
+    redMouth,
+  },
   clothes: {
-    uniformMan: uniform,
+    uniform,
     m2mGrey,
     orange,
     blueHy,
@@ -132,6 +180,7 @@ export const items = {
   },
   makeup: {
     pinkCheek,
+    stroke,
     fullMakeup,
     lineCheek,
     bleedingEye: redScar,
@@ -141,5 +190,7 @@ export const items = {
     eyebrows,
     cherry,
     cheek,
+    redRibbon,
+    triCheek,
   },
 };
