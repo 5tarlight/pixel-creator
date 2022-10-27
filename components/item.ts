@@ -193,7 +193,7 @@ export const items = {
     monk,
     oct,
     blackPlain,
-    bini,
+    // bini,
     clownHair,
   },
   eye: {
