@@ -14,6 +14,7 @@ export interface ImageData {
   mouth: StaticImageData;
   makeup: StaticImageData;
   hair: StaticImageData;
+  accesary: StaticImageData;
 }
 
 const Home: NextPage = () => {
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
     mouth: items.mouth.lineMouth,
     makeup: items.makeup.pinkCheek,
     hair: items.hair.blackHair,
+    accesary: items.accesary.cherry,
   };
 
   const [obj, setObj] = useState<ImageData>(initialState);
