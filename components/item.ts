@@ -106,6 +106,7 @@ export const categories = {
   mouth: "입",
   clothes: "옷",
   makeup: "화장",
+  accesary: "장신구",
 };
 
 export const items = {
@@ -200,10 +201,12 @@ export const items = {
     scar,
     scar2,
     eyebrows,
-    cherry,
     cheek,
-    redRibbon,
     triCheek,
+  },
+  accesary: {
+    cherry,
+    redRibbon,
     blueGlasses,
   },
 };
