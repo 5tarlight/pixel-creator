@@ -15,7 +15,6 @@ import m2mBlack from "./img/clothes/m2m_black.png";
 import pink from "./img/clothes/pink.png";
 import vampire from "./img/clothes/vampire.png";
 // import emperor from "./img/clothes/emperor.png";
-import doc from "./img/clothes/doc.png";
 import adidas from "./img/clothes/adidas.png";
 
 import lineEye from "./img/eye/line-eye.png";
@@ -265,8 +264,6 @@ export const items = {
     pink,
     vampire,
     // emperor,
-    doc,
-    adidas,
   },
   makeup: {
     pinkCheek,
