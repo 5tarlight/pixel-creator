@@ -289,6 +289,5 @@ export const items = {
     alienGlasses,
     headset,
     soldierHat,
-    mic,
   },
 };
