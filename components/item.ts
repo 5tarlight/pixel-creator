@@ -21,6 +21,7 @@ import smilingEye from "./img/eye/smiling_eye.png";
 import bwEye from "./img/eye/bwEye.png";
 import brownEye from "./img/eye/brown_eye.png";
 import smallEye from "./img/eye/small_eye.png";
+import chrong2 from "./img/eye/choront2.png";
 
 // import pinkFace from "./img/skin/pink-face.png";
 import brightFace from "./img/skin/bright_skin.png";
@@ -28,6 +29,7 @@ import shiningSkin from "./img/skin/shining_skin.png";
 import skin from "./img/skin/skin.png";
 import skin2 from "./img/skin/skin2.png";
 import skin3 from "./img/skin/skin3.png";
+import skin4 from "./img/skin/skin4.png";
 
 import blackHair from "./img/hair/black-hair.png";
 import yellowTail from "./img/hair/yello-hair.png";
@@ -42,6 +44,7 @@ import rainbowHair from "./img/hair/rainbow_hair.png";
 import devilHair from "./img/hair/devil_hair.png";
 import webHair from "./img/hair/web_hair.png";
 import pumpkinHair from "./img/hair/pumpkin_head.png";
+import hair from "./img/hair/hair.png";
 
 import pinkCheek from "./img/makeup/cheek-pink.png";
 import fullMakeup from "./img/makeup/full_makeup.png";
@@ -52,17 +55,22 @@ import devilCap from "./img/makeup/devil_cap.png";
 import dotCheek from "./img/makeup/dot_cheek.png";
 import scar from "./img/makeup/scar.png";
 import scar2 from "./img/makeup/scar2.png";
+import eyebrows from "./img/makeup/eyebrows.png";
+import cherry from "./img/makeup/cherry.png";
+import cheek from "./img/makeup/cheek.png";
 
 import lineMouth from "./img/mouth/line-mouth.png";
 import redStrokeMouth from "./img/mouth/red_stripe_mouth.png";
 import merong from "./img/mouth/tongue.png";
 import smile from "./img/mouth/smile.png";
 import openMouth from "./img/mouth/open_mouth.png";
+import triMouth from "./img/mouth/tri_mouth.png";
 
 import lineNose from "./img/nose/line-nose.png";
 import yellowSmallNose from "./img/nose/small_yello_nose.png";
 import dotNose from "./img/nose/dot_nose.png";
 import jNose from "./img/nose/j_nose.png";
+import triNose from "./img/nose/tri_nose.png";
 
 export const categories = {
   skin: "피부",
@@ -76,9 +84,10 @@ export const categories = {
 
 export const items = {
   line: line,
-  skin: { brightFace, shiningSkin, skin, skin2, skin3 },
+  skin: { brightFace, shiningSkin, skin, skin2, skin3, skin4 },
   hair: {
     blackHair,
+    hair,
     yellowTail,
     blueTwin,
     pinkShucream,
@@ -105,9 +114,10 @@ export const items = {
     bwEye,
     brownEye,
     smallEye,
+    chrong2,
   },
-  nose: { lineNose, yellowSmallNose, dotNose, jNose },
-  mouth: { lineMouth, redStrokeMouth, merong, smile, openMouth },
+  nose: { lineNose, yellowSmallNose, dotNose, jNose, triNose },
+  mouth: { lineMouth, redStrokeMouth, merong, smile, openMouth, triMouth },
   clothes: {
     uniformMan: uniform,
     m2mGrey,
@@ -128,5 +138,8 @@ export const items = {
     dotCheek,
     scar,
     scar2,
+    eyebrows,
+    cherry,
+    cheek,
   },
 };
