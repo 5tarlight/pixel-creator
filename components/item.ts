@@ -72,7 +72,7 @@ import eyebrows from "./img/makeup/eyebrows.png";
 import cherry from "./img/makeup/cherry.png";
 import cheek from "./img/makeup/cheek.png";
 import redRibbon from "./img/makeup/red_ribbon.png";
-import triCheek from "./img/mouth/tri_cheek.png";
+import triCheek from "./img/makeup/tri_cheek.png";
 
 import lineMouth from "./img/mouth/line-mouth.png";
 import redStrokeMouth from "./img/mouth/red_stripe_mouth.png";
