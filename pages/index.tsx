@@ -26,7 +26,7 @@ const Home: NextPage = () => {
     mouth: items.mouth.lineMouth,
     makeup: items.makeup.pinkCheek,
     hair: items.hair.blackHair,
-    accesary: items.accesary.cherry,
+    accesary: items.accesary.none as unknown as StaticImageData,
   };
 
   const [obj, setObj] = useState<ImageData>(initialState);

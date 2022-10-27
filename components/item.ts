@@ -1,4 +1,5 @@
 import line from "./img/line.png";
+// import none from "./img/none.png";
 
 import uniform from "./img/clothes/uniform-man.png";
 import m2mGrey from "./img/clothes/m2m_grey.png";
@@ -12,6 +13,10 @@ import whiteCoat from "./img/clothes/coat_white.png";
 import uniform2 from "./img/clothes/uniform.png";
 import m2mBlack from "./img/clothes/m2m_black.png";
 import pink from "./img/clothes/pink.png";
+import vampire from "./img/clothes/vampire.png";
+// import emperor from "./img/clothes/emperor.png";
+import doc from "./img/clothes/doc.png";
+import adidas from "./img/clothes/adidas.png";
 
 import lineEye from "./img/eye/line-eye.png";
 import chorongEye from "./img/eye/chorong_chrong.png";
@@ -36,6 +41,7 @@ import whiteEye from "./img/eye/white_eye.png";
 import torchEye from "./img/eye/torch_eye.png";
 import geseumEye from "./img/eye/geseum_eye.png";
 import devilEye from "./img/eye/devil_eye.png";
+import clownEye from "./img/eye/clown_eye.png";
 
 // import pinkFace from "./img/skin/pink-face.png";
 import brightFace from "./img/skin/bright_skin.png";
@@ -47,6 +53,7 @@ import skin4 from "./img/skin/skin4.png";
 import makeupFace from "./img/skin/makeup_face.png";
 import blue from "./img/skin/blue_skin.png";
 import purple from "./img/skin/purple.png";
+import clown from "./img/skin/clown.png";
 
 import blackHair from "./img/hair/black-hair.png";
 import yellowTail from "./img/hair/yello-hair.png";
@@ -74,6 +81,11 @@ import rainbow from "./img/hair/rainbow2.png";
 import messy from "./img/hair/messy.png";
 import messyBrown from "./img/hair/messy_brown.png";
 import pinkLong from "./img/hair/pink_long.png";
+import monk from "./img/hair/monk.png";
+import oct from "./img/hair/oct.png";
+import blackPlain from "./img/hair/black_plain.png";
+import bini from "./img/hair/bini.png";
+import clownHair from "./img/hair/clown_hair.png";
 
 import pinkCheek from "./img/makeup/cheek-pink.png";
 import fullMakeup from "./img/makeup/full_makeup.png";
@@ -104,6 +116,7 @@ import redOpen from "./img/mouth/red_open.png";
 import piMouth from "./img/mouth/pi_mouth.png";
 import bigMouth from "./img/mouth/big_mouth.png";
 import thickLip from "./img/mouth/thick_lip.png";
+import clownSmile from "./img/mouth/clown_smile.png";
 
 import lineNose from "./img/nose/line-nose.png";
 import yellowSmallNose from "./img/nose/small_yello_nose.png";
@@ -115,10 +128,14 @@ import middleNose from "./img/nose/mid_nose.png";
 import gammaNose from "./img/nose/gamma_nose.png";
 import rudolpNose from "./img/nose/rudolp_nose.png";
 import whiteNose from "./img/nose/white_nose.png";
+import clownNose from "./img/nose/clown_nose.png";
 
 import catEar from "./img/acc/cat_ear.png";
 import rudolp from "./img/acc/rudolp.png";
 import alienGlasses from "./img/acc/alien_glasses.png";
+import headset from "./img/acc/headset.png";
+import soldierHat from "./img/acc/soldier_hat.png";
+import mic from "./img/acc/mic.png";
 
 export const categories = {
   skin: "피부",
@@ -143,6 +160,7 @@ export const items = {
     makeupFace,
     zombie: blue,
     purple,
+    clown,
   },
   hair: {
     blackHair,
@@ -173,6 +191,11 @@ export const items = {
     messy,
     messyBrown,
     pinkLong,
+    monk,
+    oct,
+    blackPlain,
+    bini,
+    clownHair,
   },
   eye: {
     lineEye,
@@ -197,6 +220,7 @@ export const items = {
     torchEye,
     geseumEye,
     devilEye,
+    clownEye,
   },
   nose: {
     lineNose,
@@ -209,6 +233,7 @@ export const items = {
     gammaNose,
     rudolpNose,
     whiteNose,
+    clownNose,
   },
   mouth: {
     lineMouth,
@@ -223,6 +248,7 @@ export const items = {
     piMouth,
     bigMouth,
     thickLip,
+    clownSmile,
   },
   clothes: {
     uniform,
@@ -237,6 +263,10 @@ export const items = {
     blackCoat,
     whiteCoat,
     pink,
+    vampire,
+    // emperor,
+    doc,
+    adidas,
   },
   makeup: {
     pinkCheek,
@@ -253,11 +283,15 @@ export const items = {
     pinkTouch,
   },
   accesary: {
+    none: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAABCAQAAADkt9f8AAAAEklEQVR42mNkGAWjYBSMghEKAAoCAAJDq8N5AAAAAElFTkSuQmCC",
     cherry,
     redRibbon,
     blueGlasses,
     catEar,
     rudolp,
     alienGlasses,
+    headset,
+    soldierHat,
+    mic,
   },
 };
