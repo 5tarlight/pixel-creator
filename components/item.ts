@@ -11,6 +11,7 @@ import blackCoat from "./img/clothes/coat_black.png";
 import whiteCoat from "./img/clothes/coat_white.png";
 import uniform2 from "./img/clothes/uniform.png";
 import m2mBlack from "./img/clothes/m2m_black.png";
+import pink from "./img/clothes/pink.png";
 
 import lineEye from "./img/eye/line-eye.png";
 import chorongEye from "./img/eye/chorong_chrong.png";
@@ -34,6 +35,7 @@ import wink from "./img/eye/wink.png";
 import whiteEye from "./img/eye/white_eye.png";
 import torchEye from "./img/eye/torch_eye.png";
 import geseumEye from "./img/eye/geseum_eye.png";
+import devilEye from "./img/eye/devil_eye.png";
 
 // import pinkFace from "./img/skin/pink-face.png";
 import brightFace from "./img/skin/bright_skin.png";
@@ -44,6 +46,7 @@ import skin3 from "./img/skin/skin3.png";
 import skin4 from "./img/skin/skin4.png";
 import makeupFace from "./img/skin/makeup_face.png";
 import blue from "./img/skin/blue_skin.png";
+import purple from "./img/skin/purple.png";
 
 import blackHair from "./img/hair/black-hair.png";
 import yellowTail from "./img/hair/yello-hair.png";
@@ -70,6 +73,7 @@ import blackLongHair2 from "./img/hair/black_long2.png";
 import rainbow from "./img/hair/rainbow2.png";
 import messy from "./img/hair/messy.png";
 import messyBrown from "./img/hair/messy_brown.png";
+import pinkLong from "./img/hair/pink_long.png";
 
 import pinkCheek from "./img/makeup/cheek-pink.png";
 import fullMakeup from "./img/makeup/full_makeup.png";
@@ -86,6 +90,7 @@ import cheek from "./img/makeup/cheek.png";
 import redRibbon from "./img/makeup/red_ribbon.png";
 import triCheek from "./img/makeup/tri_cheek.png";
 import blueGlasses from "./img/makeup/blue_glasses.png";
+import pinkTouch from "./img/makeup/pink_touch.png";
 
 import lineMouth from "./img/mouth/line-mouth.png";
 import redStrokeMouth from "./img/mouth/red_stripe_mouth.png";
@@ -98,6 +103,7 @@ import redMouth from "./img/mouth/red_mouth.png";
 import redOpen from "./img/mouth/red_open.png";
 import piMouth from "./img/mouth/pi_mouth.png";
 import bigMouth from "./img/mouth/big_mouth.png";
+import thickLip from "./img/mouth/thick_lip.png";
 
 import lineNose from "./img/nose/line-nose.png";
 import yellowSmallNose from "./img/nose/small_yello_nose.png";
@@ -108,6 +114,7 @@ import smallNose from "./img/nose/small_nose.png";
 import middleNose from "./img/nose/mid_nose.png";
 import gammaNose from "./img/nose/gamma_nose.png";
 import rudolpNose from "./img/nose/rudolp_nose.png";
+import whiteNose from "./img/nose/white_nose.png";
 
 import catEar from "./img/acc/cat_ear.png";
 import rudolp from "./img/acc/rudolp.png";
@@ -134,7 +141,8 @@ export const items = {
     skin3,
     skin4,
     makeupFace,
-    blue,
+    zombie: blue,
+    purple,
   },
   hair: {
     blackHair,
@@ -164,6 +172,7 @@ export const items = {
     blackLongHair2,
     messy,
     messyBrown,
+    pinkLong,
   },
   eye: {
     lineEye,
@@ -187,6 +196,7 @@ export const items = {
     whiteEye,
     torchEye,
     geseumEye,
+    devilEye,
   },
   nose: {
     lineNose,
@@ -198,6 +208,7 @@ export const items = {
     middleNose,
     gammaNose,
     rudolpNose,
+    whiteNose,
   },
   mouth: {
     lineMouth,
@@ -211,6 +222,7 @@ export const items = {
     redOpen,
     piMouth,
     bigMouth,
+    thickLip,
   },
   clothes: {
     uniform,
@@ -224,6 +236,7 @@ export const items = {
     cozyUniform,
     blackCoat,
     whiteCoat,
+    pink,
   },
   makeup: {
     pinkCheek,
@@ -237,6 +250,7 @@ export const items = {
     eyebrows,
     cheek,
     triCheek,
+    pinkTouch,
   },
   accesary: {
     cherry,
