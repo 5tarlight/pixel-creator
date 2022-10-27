@@ -34,38 +34,83 @@ const ImageViewer: NextPage<Props> = ({ data, resetImg }) => {
         <div className="btn-container">
           <button
             className="print"
-            onClick={(e) => {
-              e.stopPropagation();
-              e.preventDefault();
-              // window.open("google.com", "_blank")?.focus();
+            onClick={async (e) => {
+              // e.stopPropagation();
+              // e.preventDefault();
+              // // window.open("google.com", "_blank")?.focus();
 
-              const src =
-                "<html><head><scri" +
-                "pt>function step1(){\n" +
-                "setTimeout('step2()', 10);}\n" +
-                "function step2(){window.print();window.close()}\n" +
-                "</scri" +
-                "pt>" +
-                `
-                <style>
-                  img {
-                    width: 512px;
-                    height: 512px;
-                  }
-                </style>
-                ` +
-                "</head><body onload='step1()'>\n" +
-                "<img src='" +
-                img +
-                "' /></body></html>";
-              const Pagelink = "about:blank";
-              const pwa = window.open(Pagelink, "_new");
-              pwa?.document.open();
-              pwa?.document.write(src);
-              pwa?.document.close();
+              // const src =
+              //   "<html><head><scri" +
+              //   "pt>function step1(){\n" +
+              //   "setTimeout('step2()', 10);}\n" +
+              //   "function step2(){window.print();window.close()}\n" +
+              //   "</scri" +
+              //   "pt>" +
+              //   `
+              //   <style>
+              //     img {
+              //       width: 512px;
+              //       height: 512px;
+              //     }
+              //   </style>
+              //   ` +
+              //   "</head><body onload='step1()'>\n" +
+              //   "<img src='" +
+              //   img +
+              //   "' /></body></html>";
+              // const Pagelink = "about:blank";
+              // const pwa = window.open(Pagelink, "_new");
+              // pwa?.document.open();
+              // pwa?.document.write(src);
+              // pwa?.document.close();
+
+              // function copyToClipboard(textToCopy) {
+              //   // navigator clipboard api needs a secure context (https)
+              //   if (navigator.clipboard && window.isSecureContext) {
+              //     // navigator clipboard api method'
+              //     return navigator.clipboard.writeText(textToCopy);
+              //   } else {
+              //     // text area method
+              //     let textArea = document.createElement("textarea");
+              //     textArea.value = textToCopy;
+              //     // make the textarea out of viewport
+              //     textArea.style.position = "fixed";
+              //     textArea.style.left = "-999999px";
+              //     textArea.style.top = "-999999px";
+              //     document.body.appendChild(textArea);
+              //     textArea.focus();
+              //     textArea.select();
+              //     return new Promise<void>((res, rej) => {
+              //       // here the magic happens
+              //       document.execCommand("copy") ? res() : rej();
+              //       textArea.remove();
+              //     });
+              //   }
+              // }
+
+              // copyToClipboard("I'm going to the clipboard !")
+              //   .then(() => console.log("text copied !"))
+              //   .catch(() => console.log("error"));
+
+              function fixBinary(bin: string) {
+                var length = bin.length;
+                var buf = new ArrayBuffer(length);
+                var arr = new Uint8Array(buf);
+                for (var i = 0; i < length; i++) {
+                  arr[i] = bin.charCodeAt(i);
+                }
+                return buf;
+              }
+
+              const binary = fixBinary(atob(img.split(",")[1]));
+              navigator.clipboard.write([
+                new ClipboardItem({
+                  "image/png": new Blob([binary], { type: "image/png" }),
+                }),
+              ]);
             }}
           >
-            출력
+            클립보드에 복사
           </button>
           <button
             className="reset"
